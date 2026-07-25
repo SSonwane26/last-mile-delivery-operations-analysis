@@ -30,7 +30,9 @@ This project answers the following questions:
 
 The analysis uses the provided dataset:
 
-- `Porter_Dataset.csv`
+```text
+porter_orders_data.csv
+```
 
 Dataset size before cleaning:
 
@@ -61,8 +63,8 @@ These extreme delivery durations were removed from the main analysis because the
 
 | File | Description |
 |---|---|
-| `Porter_Dataset.csv` | Original dataset used for analysis |
-| `python_business_analysis.ipynb` | Main improved Python business analysis notebook |
+| `porter_orders_data.csv` | Original dataset used for analysis |
+| `analysis.ipynb` | Main improved Python business analysis notebook |
 | `README.md` | Project documentation |
 
 ## KPI Framework
@@ -263,22 +265,3 @@ Priority: Medium
 The analysis shows that Porter has a delivery reliability issue, with `47.99%` of cleaned orders taking more than 45 minutes. The largest delay burden comes from Late Night orders, Saturday/Monday operations, Market 1, Protocol 6, and high-volume food categories such as Pizza and American.
 
 The most practical business opportunity is to reduce SLA breaches in the segments that contribute the largest number of delayed orders, not only the segments with the highest average delivery time.
-
-## How to Run This Project
-
-1. Clone or download this repository.
-2. Make sure `Porter_Dataset.csv` is in the same folder as the notebook.
-3. Open `porter_python_business_analysis.ipynb` in Jupyter Notebook or VS Code.
-4. Run the cells from top to bottom.
-5. Review the KPI tables, charts, delay contribution analysis, and recommendations.
-
-## Resume-Friendly Project Title
-
-**Porter Delivery Operations Analysis using Python**
-
-## Suggested Resume Bullets
-
-- Analyzed `196K+` delivery orders using Python to identify SLA breach patterns across time, market, order protocol, food category, and partner availability.
-- Built operational KPIs including average delivery time, P90 delivery time, SLA breach rate, partner utilization, and outstanding orders per partner.
-- Performed delay contribution and impact matrix analysis to identify high-volume, high-delay segments for operational prioritization.
-- Created scenario simulations to estimate potential delayed-order reduction from late-night staffing, protocol improvement, and category-level operational actions.
